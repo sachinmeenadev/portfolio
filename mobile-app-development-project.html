@@ -1,0 +1,49 @@
+<div class="block-content">
+    <div class="project-head">
+        <h1 class="block-title">App Development Project</h1>
+        <div class="tags"><span>Category : </span> Android App</div>
+        <div class="tags"><span>Client : </span> PIET</div>
+        <div class="tags"><span>Completion : </span> DEC - 2017</div>
+        <div class="tags"><span>Role : </span> App Developer</div>
+    </div>
+    <p class="project-description">A Mobile ERP to manage all the work of this institution in a central system that provides a flexible and remote access to all the staff members. This is a single app with different authorization level so that each end user has the same app install and according to their authorization level, they all get different views. This also reduced the development cost and time.</p>
+    <div class="project-media row">
+        <div class="col-md-6">
+            <img src="images/portfolio/masonry/016.jpg" alt=""/>
+        </div>
+        <div class="col-md-6">
+            <img src="images/portfolio/masonry/015.jpg" alt=""/>
+        </div>
+    </div>
+    <div class="project-nav text-center">
+        <span class="float-left">
+            <a class="open-project" href="graphic-designing-project.html">&leftarrow; Previous Project</a>
+        </span>
+        <span class="">
+            <a id="close-project" href="#"><i class="ion-grid"></i></a>
+        </span>
+        <span class="float-right">
+            <a class="open-project" href="website-design-project.html">Next Project &rightarrow; </a>
+        </span>
+    </div>
+</div>
+<div class="row text-center">
+    <div class="col-md-12 btn-email">
+        <a class="btn lowercase" href="mailto:contact@sachinkumarmeena.co.in">contact@sachinkumarmeena.co.in</a>
+    </div>
+</div>
+
+<script>
+    $('.open-project').on('click', function () {
+        var projectUrl = $(this).attr("href");
+        $('.inline-menu-container').removeClass('showx');
+        $('.content-blocks.pop').addClass('showx');
+        $('.content-blocks.pop section').load(projectUrl)
+        return false;
+    });
+    $('#close-project').on('click', function () {
+        $('.content-blocks.pop').removeClass('showx');
+        $('.inline-menu-container').addClass('showx');
+        $('.content-blocks.pop section').empty();
+    });
+</script>
